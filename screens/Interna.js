@@ -1,11 +1,13 @@
-import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { useRoute } from '@react-navigation/native';
 
 const InternaScreen = () => {
+    const route = useRoute();
+
     return (
         <View style={styles.container}>
-            <Text>Bem vindo!</Text>
+            <Text>Bem vindo! {route.params.email}</Text>
             <StatusBar style='auto' />
         </View>
     );

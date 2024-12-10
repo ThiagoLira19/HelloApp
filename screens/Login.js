@@ -14,7 +14,7 @@ const LoginScreen = () => {
             <TextInput value={email} onChangeText={setEmail}/>
             <Text>Senha</Text>
             <TextInput value={senha} onChangeText={setSenha} secureTextEntry/>
-            <Button title='Entrar' onPress={() => navegacao.navigate('Interna')} />
+            <Button title='Entrar' onPress={() => navegacao.navigate('Interna', { email })} />
             <Button title='Voltar' onPress={() => navegacao.navigate('Home')} />
         </View>
     );

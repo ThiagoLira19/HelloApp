@@ -9,6 +9,7 @@ const HomeScreen = () => {
     return (
         <View style={styles.container}>
             <Text>Olá mundo!</Text>
+            <Button title='Entrar' onPress={() => navegacao.navigate('Login')} />
             <Button title='Cadastre-se' onPress={() => navegacao.navigate('Cadastro')} />
             <StatusBar style='auto' />
         </View>

@@ -14,7 +14,7 @@ const CadastroScreen = () => {
             <TextInput value={email} onChangeText={setEmail}/>
             <Text>Senha</Text>
             <TextInput value={senha} onChangeText={setSenha} secureTextEntry/>
-            <Button title='Entrar' onPress={() => navegacao.navigate('Login')} />
+            <Button title='Cadastrar' onPress={() => navegacao.navigate('Login')} />
             <Button title='Voltar' onPress={() => navegacao.navigate('Home')} />
         </View>
     );
