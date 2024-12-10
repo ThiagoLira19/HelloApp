@@ -1,15 +1,11 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { StyleSheet, Text, View } from 'react-native';
 
-const HomeScreen = () => {
-    const navegacao = useNavigation();
-
+const InternaScreen = () => {
     return (
         <View style={styles.container}>
-            <Text>Olá mundo!</Text>
-            <Button title='Cadastre-se' onPress={() => navegacao.navigate('Cadastro')} />
+            <Text>Bem vindo!</Text>
             <StatusBar style='auto' />
         </View>
     );
@@ -24,4 +20,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default HomeScreen;
+export default InternaScreen;
